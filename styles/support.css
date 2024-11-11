@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: white;
+    color: dimgray;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+header h1 {
+    font-size: 3rem;
+}
+header p {
+    font-size: 1.1rem;
+}
+.support-categories {
+    background-color: white;
+    padding: 60px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.support-categories h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+.category-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+.category-card img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+.category-card h3 {
+    font-size: 1.5rem;
+    color: dimgray;
+    margin-bottom: 15px;
+}
+.category-card p {
+    color: gray;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+.category-card a {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+.category-card a:hover {
+    background-color: darkblue;
+}
+.faq, .resources, .contact-form, .product-features, .customer-service, .search-bar {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+.faq h2, .resources h2, .contact-form h2, .product-features h2, .customer-service h2, .search-bar h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.faq ul, .resources ul, .customer-service ul {
+    list-style: none;
+    padding: 0;
+}
+.faq li, .resources li, .customer-service li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+.contact-form button {
+    background-color: darkblue;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+.contact-form button:hover {
+    background-color: darkblue;
+}
+.product-features img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.product-features div {
+    margin-bottom: 40px;
+}
+.product-features h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.customer-service img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.customer-service div {
+    text-align: center;
+    padding: 15px;
+}
+.search-bar input {
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 25px;
+    border: 1px solid whitesmoke;
+}
+footer {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+}
+footer a {
+    color: gray;
+    font-weight: 500;
+}
+footer a:hover {
+    text-decoration: underline;
+}

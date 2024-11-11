@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - HomePod</title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="homepod.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="homepod.jpg" alt="HomePod">
+        <div class="product-info">
+            <h1>HomePod</h1>
+            <p>Immerse yourself in sound with the HomePod. With powerful audio, deep bass, and smart home integration, it's the perfect speaker for your home.</p>
+            <div class="price">$299.00</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>HomePod Features</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>High-fidelity audio with spatial awareness</li>
+                <li>Deep bass and immersive sound quality with 360-degree audio</li>
+                <li>Integrated with Siri for hands-free control and smart home features</li>
+                <li>Multi-room audio for synchronized sound throughout your home</li>
+                <li>Seamless integration with Apple Music, Spotify, and other streaming services</li>
+                <li>Smart home hub for controlling HomeKit-enabled accessories</li>
+                <li>Beautiful design that fits perfectly in any room</li>
+            </ul>
+            <p><strong>Price: $299.00</strong></p>
+            <p>Experience incredible sound with the HomePod. Get yours today and enjoy the future of home audio.</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

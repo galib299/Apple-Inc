@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - AirTag</title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="airtag.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="airtag.jpg" alt="AirTag">
+        <div class="product-info">
+            <h1>AirTag</h1>
+            <p>Find your lost items easily with the all-new AirTag. Attach it to your keys, wallet, backpack, or anything else, and track it using the Find My app on your Apple devices.</p>
+            <div class="price">$29.99</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>AirTag Features</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Easy item tracking using the Find My app on your Apple devices</li>
+                <li>Precision finding with Ultra-Wideband technology</li>
+                <li>Compact, durable design with a replaceable battery</li>
+                <li>Built-in speaker to help you locate lost items by sound</li>
+                <li>Water and dust resistant with IP67 rating</li>
+                <li>Privacy and security with end-to-end encryption</li>
+                <li>Works with Apple devices like iPhone, iPad, and Mac</li>
+            </ul>
+            <p><strong>Price: $29.99</strong></p>
+            <p>Never lose track of your important items again. Pre-order your AirTag today!</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

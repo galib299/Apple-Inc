@@ -1,0 +1,148 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: dimgray;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1; 
+}
+.product {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 50px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    margin-top: 80px;
+}
+.product:hover {
+    transform: scale(1.03);
+}
+.product img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+}
+.product-info {
+    margin-top: 30px;
+}
+.product-info h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: dimgray;
+    margin-bottom: 10px;
+}
+.product-info p {
+    font-size: 18px;
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.price {
+    font-size: 32px;
+    color: dimgray;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.buy-now-btn {
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    padding: 18px 36px;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.buy-now-btn:hover {
+    background-color: darkblue;
+    transform: translateY(-2px);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 60px;
+    overflow: auto;
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header h2 {
+    margin: 0;
+    font-size: 32px;
+    color: dimgray;
+}
+.close {
+    font-size: 32px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.close:hover {
+    color: dimgray;
+}
+.modal-body {
+    margin-top: 30px;
+}
+.modal-footer {
+    margin-top: 30px;
+    text-align: center;
+}
+.modal-footer button {
+    font-size: 22px;
+    background-color: blue;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.modal-footer button:hover {
+    background-color: darkblue;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

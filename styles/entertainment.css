@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: white;
+    color: dimgray;
+    line-height: 1.6;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+header h1 {
+    position: relative;
+    font-size: 3.5rem;
+    text-align: center;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+header p {
+    position: relative;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 1;
+    margin-top: 20px;
+    max-width: 700px;
+    margin:  auto;
+    font-weight: 300;
+}
+nav {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+nav a:hover {
+    text-decoration: underline;
+    font-size: 1.4em;
+    color: whitesmoke;
+}
+.section-video {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: dimgray;
+}
+.section-video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.section-video .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.section-video .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.section-video h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.section-video p {
+    font-size: 1.1rem;
+    color: whitesmoke;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

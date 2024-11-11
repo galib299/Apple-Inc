@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - AirPods 4</title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="airpods.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="airpods 4.jpg" alt="AirPods 4">
+        <div class="product-info">
+            <h1>AirPods 4</h1>
+            <p>Experience rich, high-quality sound with the all-new AirPods 4. Featuring longer battery life, enhanced connectivity, and seamless integration with your Apple devices, these are the best AirPods yet.</p>
+            <div class="price">$249.99</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>AirPods 4 Features</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Rich, immersive sound with advanced drivers</li>
+                <li>Active Noise Cancellation for an uninterrupted listening experience</li>
+                <li>Transparency mode for awareness of your surroundings</li>
+                <li>Up to 30 hours of battery life with the charging case</li>
+                <li>Customizable fit with multiple ear tip sizes</li>
+                <li>Instant pairing with all Apple devices</li>
+                <li>Water and sweat resistance for an active lifestyle</li>
+                <li>Spatial audio for an immersive 3D sound experience</li>
+            </ul>
+            <p><strong>Price: $249.99</strong></p>
+            <p>Upgrade your sound experience with the AirPods 4. Pre-order now for the latest in wireless audio technology!</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

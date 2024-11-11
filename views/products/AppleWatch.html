@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - Apple Watch Series 10</title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="applewatch.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="highlights_design_startframe__emus80o6f3sm_xlarge.jpg" alt="Apple Watch Series 10">
+        <div class="product-info">
+            <h1>Apple Watch Series 10</h1>
+            <p>Revolutionary design, advanced health features, and seamless performance. The Apple Watch Series 10 is the ultimate smartwatch for fitness, convenience, and style.</p>
+            <div class="price">$499.99</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Apple Watch Series 10 Features</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Larger, brighter always-on display</li>
+                <li>Body temperature sensor and advanced heart rate tracking</li>
+                <li>Improved sleep monitoring and stress tracking</li>
+                <li>Faster processor and extended battery life</li>
+                <li>Waterproof and enhanced fitness tracking features</li>
+                <li>Customizable bands in premium materials like titanium and ceramic</li>
+                <li>Seamless integration with iPhone, Mac, and other Apple devices</li>
+            </ul>
+            <p><strong>Price: $499.99</strong></p>
+            <p>Experience the best in wearable technology with the Apple Watch Series 10. Pre-order now!</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

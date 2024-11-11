@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - Apple TV 4k</title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="large (3).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="apple-tv-4k-hero-select-202210.jpg" alt="Apple TV 4K">
+        <div class="product-info">
+            <h1>Apple TV 4K</h1>
+            <p>Experience cinematic viewing with the Apple TV 4K. With stunning 4K HDR visuals, Dolby Vision, and Dolby Atmos sound, it’s the ultimate entertainment experience for your home.</p>
+            <div class="price">$179.99</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Apple TV 4K Features</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Stunning 4K HDR with Dolby Vision for vibrant, true-to-life color</li>
+                <li>Dolby Atmos sound for immersive audio experiences</li>
+                <li>Supports all the popular streaming services like Apple TV+, Netflix, Amazon Prime Video, and more</li>
+                <li>Upgraded A15 Bionic chip for fast, seamless performance</li>
+                <li>Works with Siri for hands-free control and smart home integration</li>
+                <li>AirPlay for sharing content from your iPhone or iPad</li>
+                <li>Easy setup and seamless integration with Apple devices</li>
+            </ul>
+            <p><strong>Price: $179.99</strong></p>
+            <p>Transform your living room with the Apple TV 4K. Pre-order now for the best in 4K entertainment.</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

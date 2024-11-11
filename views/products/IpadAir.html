@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - Ipad Air</title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="medium_2x (1).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="ipad air.png" alt="iPad Air Image">
+        <div class="product-info">
+            <h1>iPad Air</h1>
+            <p>Thin, light, and powerful. The iPad Air is your perfect companion for work, play, and everything in between.</p>
+            <div class="price">$599.99</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>iPad Air Information</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>iPad Air Features</h3>
+            <p>The iPad Air combines performance and portability in a way no tablet has before. With the powerful M1 chip, 10.9-inch Liquid Retina display, and incredible battery life, the iPad Air is the ideal device for both work and entertainment.</p>
+            <p><strong>Price: $599.99</strong></p>
+            <p>Get yours today and discover the possibilities with iPad Air!</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

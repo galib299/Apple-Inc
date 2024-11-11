@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - Apple Vision Pro  </title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="visionpro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="visionpro.jpg" alt="Apple Vision Pro">
+        <div class="product-info">
+            <h1>Apple Vision Pro</h1>
+            <p>The most advanced spatial computer. With an immersive display, powerful performance, and revolutionary features, Apple Vision Pro transforms the way you interact with the world.</p>
+            <div class="price">$3499.99</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Apple Vision Pro Features</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Immersive spatial display with 4K resolution per eye</li>
+                <li>Real-time eye tracking and intuitive controls</li>
+                <li>Advanced gesture recognition with haptic feedback</li>
+                <li>Powerful M2 chip and R1 processor for seamless performance</li>
+                <li>Supports AR and VR applications for both work and play</li>
+                <li>Premium materials, including breathable mesh and high-end optics</li>
+                <li>Spatial audio for an immersive sound experience</li>
+                <li>Seamless integration with macOS, iOS, and iPadOS devices</li>
+            </ul>
+            <p><strong>Price: $3499.99</strong></p>
+            <p>Discover the future of computing with the Apple Vision Pro. Pre-order now to experience the world in a new way!</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

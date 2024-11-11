@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy - Iphone 16 Pro</title>
+    <link rel="shortcut icon" href="a-ico.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<body>
+<video class="video-background" autoplay muted loop>
+    <source src="iphonevideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="container">
+    <div class="product">
+        <img src="iphone16promax.webp" alt="Product Image">
+        <div class="product-info">
+            <h1>Iphone 16 Pro  </h1>
+            <p>The iPhone 16 Pro is powered by the latest A18 Bionic chip, making it faster and more efficient than ever before. Whether you're gaming, multitasking, or streaming, it delivers a smooth, lag-free experience.</p>
+            <div class="price">$1049.99</div>
+            <button class="buy-now-btn" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Product Information</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <h3>Iphone 16 Pro </h3>
+            <p>See Every Detail in ProMotion": The iPhone 16 Pro boasts a stunning 6.7-inch Super Retina XDR display with ProMotion technology. Enjoy smoother scrolling, richer colors, and higher contrast, whether you’re watching movies or browsing content.</p>
+            <p><strong>Price: $1049.99 </strong></p>
+            <p>Order now and experience the future of technology!</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="window.location.href=''">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("productModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("productModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("productModal")) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>
